@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Serverless artifacts
+.serverless/
+.meta.json
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.*
