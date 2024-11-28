@@ -12,6 +12,7 @@ export class UserModel {
     id: {
       type: String,
       default: () => uuidv4(),
+      hashKey: true,
       index: {
         name: 'userIdIndex',
         type: 'global',
@@ -31,7 +32,7 @@ export class UserModel {
     });
   }
 
-  static async read(id: string): Promise<User> {
+  static async get(id: string): Promise<User> {
     return this.model.get(id);
   }
 
